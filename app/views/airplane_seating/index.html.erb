@@ -1,0 +1,27 @@
+
+<div class = "container">
+<h1> Airplane Seating algorithm </h1
+
+<h1><%=@number %></h2>
+ <%= form_for(:inputs, url: airplane_seating_arrayOfarray_path, method: "post", html: {role: 'form', autocomplete: 'off'}) do |f| %>
+  <div class='container'>
+    <table class='table table-bordered'>
+      <div id="display">
+        <thead>
+          <tr>
+            <th>Row</th>
+            <th>Column</th>
+          </tr>
+        </thead>
+        <tbody id = "display-body">
+        </tbody>
+      </div>
+    </table>
+    <div class="form-group">
+      <%= f.label :NumberOfPassengers %>:
+      <%= f.number_field :NumberOfPassengers, class: 'form-control form-control-lg rounded-0', required: true ,id: "number"%><br />
+    </div>
+  </div>
+<%= f.button :Submit, class: 'btn btn-success btn-lg float-right',id: "submitNo" %>
+  <% end %>
+</div>

@@ -1,0 +1,15 @@
+
+<div class = "container">
+<h1> Airplane Seating algorithm </h1>
+           <div class="card-body">
+             <%= form_for(:array, url: {action: 'create'}, method: "post", html: {role: 'form', autocomplete: 'off'}) do |f| %>
+                <div class="form-group">
+                  <%= f.label :NumberOfElements %>:
+                  <%= f.number_field :number_of_elements, class: 'form-control form-control-lg rounded-0', required: true ,id: "number"%><br />
+                </div>
+                <%= f.button :Submit, class: 'btn btn-success btn-lg float-right',id: "btnCreate" %>
+              <% end %>
+            </div>
+            <!--/card-block-->
+          </div>
+</div>
